@@ -14,5 +14,24 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $links = 
+    [
+        './pages/a', './pages/b', './pages/c'
+    ];
+    return view('home' , compact('links'));
 });
+
+Route::get('/a', function () {
+    return view('pages/a');
+});
+
+Route::get('/b', function () {
+    return view('pages/b');
+});
+
+Route::get('/c', function () {
+    return view('pages/c');
+});
+
+
+

@@ -7,13 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
-    <header>
-        <ul>
-            @foreach($links as $link)
-            <li><a href="{{ link }}"></a></li>
-        </ul>
-    </header>
-    
+    <h1>This is page A</h1>
 </body>
 </html>
