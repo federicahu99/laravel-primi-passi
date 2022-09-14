@@ -9,13 +9,17 @@
 <body>
 
     <header>
+
         <ul>
+
             @foreach($links as $link)
             <li>
-                <a href="">{{ link }}</a>
+                <a href="{{ $link['url'] }}">{{ $link['name'] }}</a>
             </li>
             @endforeach
+            
         </ul>
+
     </header>
     
 </body>

@@ -14,23 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = 
-    [
-        'page a', 'page b', 'page c'
+    $data = [
+        'links' => 
+        [
+            ['name' => 'page a', 'url' => '/a'],
+            ['name' => 'page b', 'url' => '/b'],
+            ['name' => 'page c', 'url' => '/c'],
+        ],
     ];
-    return view('home' , compact('links'));
+    return view('home' , $data);
 });
 
 Route::get('/a', function () {
-    return view('pages/a');
+    return view('pages.a');
 });
 
 Route::get('/b', function () {
-    return view('pages/b');
+    return view('pages.b');
 });
 
 Route::get('/c', function () {
-    return view('pages/c');
+    return view('pages.c');
 });
 
 
