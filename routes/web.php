@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $links = 
     [
-        './pages/a', './pages/b', './pages/c'
+        'page a', 'page b', 'page c'
     ];
     return view('home' , compact('links'));
 });

@@ -11,7 +11,10 @@
     <header>
         <ul>
             @foreach($links as $link)
-            <li><a href="{{ link }}"></a></li>
+            <li>
+                <a href="">{{ link }}</a>
+            </li>
+            @endforeach
         </ul>
     </header>
     
